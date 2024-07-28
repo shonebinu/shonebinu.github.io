@@ -7,24 +7,29 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Puppetfactory",
-    techs: ["Next.js", "TypeScript"],
-    link: "https://puppetfactory.app/",
+    title: "Weatherify",
+    techs: ["JavaScript", "WeatherAPI"],
+    link: "https://shonebinu.github.io/weatherify/",
   },
   {
-    title: "Script to generate Next.js project",
-    techs: ["Shell"],
-    link: "https://github.com/MaeWolff/create-nextjs-app-bash-script",
+    title: "MGUScraper",
+    techs: ["Streamlit", "Python", "Scrapy/BeautifulSoup"],
+    link: "https://github.com/shonebinu/MGUScraper",
   },
   {
-    title: "Dictionary App",
-    techs: ["Next.js", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    title: "Taskify",
+    techs: ["JavaScript", "LocalStorage"],
+    link: "https://shonebinu.github.io/taskify/",
   },
   {
-    title: "Portfolio / Template",
-    techs: ["Astro", "TypeScript"],
-    link: "https://github.com/MaeWolff/astro-portfolio-template",
+    title: "College Curriculum",
+    techs: ["C/C++", "HTML/CSS/JavaScript", "PHP", "Java"],
+    link: "https://github.com/shonebinu/collegeCurriculum/",
+  },
+  {
+    title: "Flashify",
+    techs: ["JavaScript", "PHP", "Linux", "MySQL"],
+    link: "https://github.com/shonebinu/flashify/",
     isComingSoon: true,
   },
 ];
