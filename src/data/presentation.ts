@@ -30,6 +30,18 @@ const presentation: Presentation = {
       label: "Resume",
       link: "https://github.com/shonebinu",
     },
+    {
+      label: "YouTube",
+      link: "https://www.youtube.com/@shonebinu5583",
+    },
+    {
+      label: "Medium",
+      link: "https://medium.com/@shonebinu",
+    },
+    {
+      label: "OpenGenus",
+      link: "https://iq.opengenus.org/author/shone",
+    },
   ],
 };
 

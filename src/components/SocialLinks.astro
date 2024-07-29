@@ -1,18 +1,23 @@
 ---
 import Link from "./shared/Link.astro";
 import presentation from "@/data/presentation";
+
+type Props = {
+  maxLinks?: number;
+}
+
+const { maxLinks = Infinity } = Astro.props;
+
+const displayedSocials = presentation.socials.slice(0, maxLinks);
 ---
 
-<ul role="list" class="flex flex-row gap-2">
-  {
-    presentation.socials.map((social, index) => (
-      <>
-        <li>
-          <Link href={social.link} label={social.label} />
-        </li>
-
-        {presentation.socials.length - 1 !== index && <li>/</li>}
-      </>
-    ))
-  }
+<ul role="list" class="flex flex-row flex-wrap gap-2">
+  {displayedSocials.map((social, index) => (
+    <>
+      <li>
+        <Link href={social.link} label={social.label} />
+      </li>
+      {displayedSocials.length - 1 !== index && <li>/</li>}
+    </>
+  ))}
 </ul>

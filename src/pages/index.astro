@@ -46,7 +46,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           set:html={convertAsteriskToStrongTag(presentation.description)}
         />
 
-        <SocialLinks />
+        <SocialLinks maxLinks={3} />
       </div>
     </article>
 
