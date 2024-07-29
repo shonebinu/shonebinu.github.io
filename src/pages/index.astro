@@ -13,6 +13,7 @@ import presentation from "@/data/presentation";
 import projects from "@/data/projects";
 import experiences from "@/data/experiences"
 import skills from "@/data/skills"
+import education from "@/data/education"
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
@@ -52,7 +53,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Recent posts</h3>
+        <h3 class="text-lg text-neutral-100">Recent Posts</h3>
         <Link href="/posts" label="See all posts" isUnderline target="_self" />
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
@@ -77,7 +78,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
-          Notable projects
+          Notable Projects
         </h3>
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
@@ -113,7 +114,33 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Technologies I've used</h3>
+        <h3 class="text-lg text-neutral-100">Academic Background</h3>
+      </header>
+
+      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+        {education.length === 0 && <p>No education details available.</p>}
+
+        {education.map((entry) => (
+          <div
+            key={entry.degree}
+            class="flex flex-col w-full border border-neutral-700 rounded-lg p-4 transform transition duration-300 hover:shadow-lg hover:bg-neutral-800"
+          >
+            <h4 class="text-base font-medium text-neutral-200">{entry.degree}</h4>
+            <p class="text-[0.80rem] text-neutral-400">{entry.institution}</p>
+            <p class="text-[0.80rem] text-neutral-400">{entry.year}
+             {entry.marks ? ` • ${entry.marks}` : ''} 
+            </p>
+            <p class="mt-2 text-s leading-relaxed text-neutral-400">
+              {entry.description}
+            </p>
+          </div>
+        ))}
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Technologies I've Used</h3>
       </header>
 
       <section class="flex flex-col gap-6">
@@ -163,12 +190,13 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Get in touch</h3>
+        <h3 class="text-lg text-neutral-100">Get In Touch</h3>
       </header>
-      <p>
+      <p style="line-height: 2">
         Email me at <Link
           href={`mailto:${presentation.mail}`}
           label={presentation.mail}
+          isUnderline={true}
         /> or chat with me via my social links.
       </p>
 

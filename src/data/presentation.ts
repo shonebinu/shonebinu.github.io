@@ -35,12 +35,12 @@ const presentation: Presentation = {
       link: "https://www.youtube.com/@shonebinu5583",
     },
     {
-      label: "Medium",
-      link: "https://medium.com/@shonebinu",
-    },
-    {
       label: "OpenGenus",
       link: "https://iq.opengenus.org/author/shone",
+    },
+    {
+      label: "Reddit",
+      link: "https://www.reddit.com/user/shonebinu/",
     },
   ],
 };
