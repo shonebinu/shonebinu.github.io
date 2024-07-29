@@ -77,7 +77,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
-          Recent projects
+          Notable projects
         </h3>
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
@@ -92,7 +92,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Recent Experiences</h3>
+        <h3 class="text-lg text-neutral-100">Work Experiences</h3>
       </header>
 
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
@@ -113,7 +113,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Recent Skills</h3>
+        <h3 class="text-lg text-neutral-100">Technologies I've used</h3>
       </header>
 
       <section class="flex flex-col gap-6">

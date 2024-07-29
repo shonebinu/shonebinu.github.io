@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Shone👋",
   profile: "/shone.webp",
   description:
-    "Namaste, i'm an *indian fullstack developer* with over *2 years* of web experience. I am currently working with *Javascript and PHP*. Outside of work I spend more time improving myself and learning React.",
+    "Namaste, I'm an *Indian fullstack developer* with over *2 years* of web experience. I am currently working with *Javascript and PHP*. Outside of work I spend more time improving myself and learning React.",
   socials: [
     {
       label: "Github",
