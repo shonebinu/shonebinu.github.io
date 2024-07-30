@@ -17,11 +17,6 @@ const projects: Project[] = [
     link: "https://github.com/shonebinu/MGUScraper",
   },
   {
-    title: "Taskify",
-    techs: ["JavaScript", "LocalStorage"],
-    link: "https://shonebinu.github.io/taskify/",
-  },
-  {
     title: "College Curriculum",
     techs: ["C/C++", "HTML/CSS/JavaScript", "PHP", "Java"],
     link: "https://github.com/shonebinu/collegeCurriculum/",
