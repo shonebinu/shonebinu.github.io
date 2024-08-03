@@ -13,7 +13,7 @@ const experiences: Experience[] = [
   // },
   {
     role: "Virtual Intern at Microsoft FRT Program",
-    duration: "July 2023 - Sept 2023",
+    duration: "Jul 2023 - Sep 2023",
     description:
       "Completed a guided curriculum and developed a project leveraging Azure Language Service and other technologies to address farmers' questions.",
   },
