@@ -3,7 +3,7 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, isComingSoon } = Astro.props;
+const { title, techs, link, description, isComingSoon } = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -25,14 +25,15 @@ const formatTechs = (values: string[]) =>
 
   {
     !isComingSoon && (
-      <a
-        class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center"
-        href={link}
-        target="_blank"
-      >
-        <div class="flex flex-col gap-4 md:flex-row md:items-center">
+    <a
+      class="group flex flex-col w-full cursor-pointer rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"
+      href={link}
+      target="_blank"
+    >
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex flex-col">
           <p class="text-neutral-100">{title}</p>
-          <p>{formatTechs(techs)}</p>
+          <p class="text-[0.80rem]">{formatTechs(techs)}</p>
         </div>
 
         <svg
@@ -40,7 +41,7 @@ const formatTechs = (values: string[]) =>
           height="18"
           viewBox="0 0 18 18"
           fill="none"
-          class="transition-all duration-300 group-hover:translate-x-1"
+          class="transition-all duration-300 group-hover:translate-x-1 self-start"
         >
           <path
             d="M5.25 12.75L12.75 5.25"
@@ -55,7 +56,12 @@ const formatTechs = (values: string[]) =>
             stroke-linejoin="round"
           />
         </svg>
-      </a>
+      </div>
+    
+      {
+        description && (<p class="mt-2">{description}</p>)
+      }
+    </a>
     )
   }
 </>

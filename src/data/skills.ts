@@ -24,6 +24,7 @@ const skills: Skills = {
 	others: [
 		{ name: "Linux", icon: "fab fa-linux" },
 		{ name: "Git", icon: "fab fa-git-alt" },
+		{ name: "GitHub", icon: "fab fa-github" },
 		{ name: "Docker", icon: "fab fa-docker" },
 		{ name: "C/C++", icon: "fas fa-c" },
 		{ name: "Java", icon: "fab fa-java" },
