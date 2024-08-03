@@ -104,7 +104,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             key={experience.role}
             class="flex flex-col w-full border border-neutral-700 rounded-lg p-4 transform transition duration-300 hover:shadow-lg hover:bg-neutral-800"
           >
-            <p class="text-neutral-100">{experience.role}</p>
+            <p class="text-base font-medium text-neutral-100">{experience.role}</p>
             <p class="text-[0.80rem] text-neutral-400">{experience.duration}</p>
             <p class="mt-2 text-s leading-relaxed text-neutral-400">
               {experience.description}
@@ -127,7 +127,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             key={entry.degree}
             class="flex flex-col w-full border border-neutral-700 rounded-lg p-4 transform transition duration-300 hover:shadow-lg hover:bg-neutral-800"
           >
-            <p class="text-neutral-100">{entry.degree}</p>
+            <p class="text-base font-medium text-neutral-100">{entry.degree}</p>
             <p class="text-[0.80rem] text-neutral-400">{entry.institution}</p>
             <p class="text-[0.80rem] text-neutral-400">{entry.year}
              {entry.marks ? ` • ${entry.marks}` : ''} 
@@ -150,7 +150,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           <div class="flex flex-col mt-2">
             <div class="flex flex-col bg-transparent border border-neutral-700 p-4 rounded-lg shadow-md transition-colors duration-300 hover:bg-neutral-800 hover:shadow-lg">
               <p class="text-sm leading-relaxed text-neutral-400">
-                <strong>{event.title} </strong>({event.date}): {event.description}
+                <span class="text-neutral-100">{event.title} </span>({event.date}): {event.description}
               </p>
             </div>
           </div>
