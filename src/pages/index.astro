@@ -150,7 +150,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           <div class="flex flex-col mt-2">
             <div class="flex flex-col bg-transparent border border-neutral-700 p-4 rounded-lg shadow-md transition-colors duration-300 hover:bg-neutral-800 hover:shadow-lg">
               <p class="text-sm leading-relaxed text-neutral-400">
-                <span class="text-neutral-100">{event.title} </span>({event.date}): {event.description}
+                <span class="font-bold">{event.date}</span>: <span class="text-neutral-100">{event.title} </span> -> {event.description}
               </p>
             </div>
           </div>
