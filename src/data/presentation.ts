@@ -42,6 +42,14 @@ const presentation: Presentation = {
       label: "Reddit",
       link: "https://www.reddit.com/user/shonebinu/",
     },
+    {
+      label: "X",
+      link: "https://x.com/shonebinu"
+    },
+    {
+      label: "Instagram",
+      link: "https://www.instagram.com/shoneb.inu/"
+    }
   ],
 };
 
