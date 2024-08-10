@@ -12,7 +12,7 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "shonebinu04@gmail.com",
+  mail: "hello@shonebinu.com",
   title: "Hi, I’m Shone👋",
   profile: "/shone.webp",
   description:
