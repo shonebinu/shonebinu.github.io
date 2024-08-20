@@ -15,7 +15,7 @@ const projects: Project[] = [
   },
   {
     title: "MGUScraper",
-    techs: ["Streamlit", "Python", "Scrapy/BeautifulSoup"],
+    techs: ["Streamlit", "Python", "BeautifulSoup"],
     description: "MGU Scraper is a specialized tool that simplifies the bulk extraction of students' exam results.",
     link: "https://github.com/shonebinu/MGUScraper",
   },
