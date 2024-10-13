@@ -14,6 +14,7 @@ const skills: Skills = {
 		{ name: "HTML", icon: "fab fa-html5" },
 		{ name: "CSS", icon: "fab fa-css3-alt" },
 		{ name: "JavaScript", icon: "fab fa-js" },
+		{ name: "React", icon: "fab fa-react" },
 	],
 	backend: [
 		{ name: "Node.js", icon: "fab fa-node-js" },

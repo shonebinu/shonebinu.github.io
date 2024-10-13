@@ -39,10 +39,6 @@ const presentation: Presentation = {
       link: "https://iq.opengenus.org/author/shone",
     },
     {
-      label: "Reddit",
-      link: "https://www.reddit.com/user/shonebinu/",
-    },
-    {
       label: "X",
       link: "https://x.com/shonebinu"
     },
