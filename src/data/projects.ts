@@ -15,6 +15,14 @@ const projects: Project[] = [
     link: "https://github.com/shonebinu/MGUScraper",
   },
   {
+    title: "StarAI",
+    techs: ["Python", "Streamlit", "LangChain", "OpenAI API", "FAISS"],
+    description:
+      "StarAI is designed to ask questions and retrieve answers from NASA technical documents using vector-based search.",
+    link: "https://github.com/shonebinu/StarAI",
+  },
+
+  {
     title: "Weatherify",
     techs: ["JavaScript", "WeatherAPI"],
     description:

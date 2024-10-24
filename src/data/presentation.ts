@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Shone👋",
   profile: "/shone.webp",
   description:
-    "Namaste, I'm an *Indian fullstack developer* with over *2 years* of web experience. I am currently working with *Javascript and PHP*. Outside of work I spend more time improving myself and learning React.",
+    "Namaste, I'm an *Indian fullstack developer* with over *2 years* of web experience. I am currently working with *Javascript and React*. Outside of work I spend more time improving myself and learning Node.",
   socials: [
     {
       label: "Github",
@@ -28,7 +28,7 @@ const presentation: Presentation = {
     },
     {
       label: "Resume",
-      link: "https://github.com/shonebinu",
+      link: "https://drive.google.com/file/d/1Mw2sevyWPyBoOh4jccLtX9654cTWjzUC/view?usp=sharing",
     },
     {
       label: "YouTube",
@@ -40,12 +40,12 @@ const presentation: Presentation = {
     },
     {
       label: "X",
-      link: "https://x.com/shonebinu"
+      link: "https://x.com/shonebinu",
     },
     {
       label: "Instagram",
-      link: "https://www.instagram.com/shoneb.inu/"
-    }
+      link: "https://www.instagram.com/shoneb.inu/",
+    },
   ],
 };
 

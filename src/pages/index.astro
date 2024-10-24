@@ -101,10 +101,11 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {experiences.map((experience) => (
           <div
-            key={experience.role}
+            key={experience.role + experience.company}
             class="flex flex-col w-full border border-neutral-700 rounded-lg p-4 transform transition duration-300 hover:shadow-lg hover:bg-neutral-800"
           >
             <p class="font-bold text-neutral-100">{experience.role}</p>
+            <p class="text-[0.80rem] text-neutral-400">{experience.company}</p>
             <p class="text-[0.80rem] text-neutral-400">{experience.duration}</p>
             <p class="mt-2 text-s leading-relaxed text-neutral-400">
               {experience.description}
@@ -128,10 +129,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             class="flex flex-col w-full border border-neutral-700 rounded-lg p-4 transform transition duration-300 hover:shadow-lg hover:bg-neutral-800"
           >
             <p class="font-bold text-neutral-100">{entry.degree}</p>
-            <p class="text-[0.80rem] text-neutral-400">{entry.institution}</p>
-            <p class="text-[0.80rem] text-neutral-400">{entry.year}
-             {entry.marks ? ` • ${entry.marks}` : ''} 
-            </p>
+            <p class="text-[0.80rem] text-neutral-400">{entry.institution + ' • ' + entry.marks}</p>
+            <p class="text-[0.80rem] text-neutral-400">{entry.year}</p>
             <p class="mt-2 text-s leading-relaxed text-neutral-400">
               {entry.description}
             </p>
